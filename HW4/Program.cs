@@ -64,4 +64,19 @@ int GetSumOfNumbers (int Number){
 */
 
 
+int[] array = new int[8];
+
+Random random = new Random();
+
+Console.Write("[");
+
+for (int i = 0; i < array.Length; i++)
+{
+    array[i] = random.Next(1, 100);
+}
+for (int i = 0; i < array.Length; i++)
+{
+    Console.Write($"{array[i]} ");
+}
+Console.Write("]");
 
